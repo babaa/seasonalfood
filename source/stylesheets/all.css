@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+body {
+  text-align: center;
+  font-family: sans-serif; }
+
+.doc {
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h1 {
+    font-size: 50px;
+}
+
+.spacer {
+  height: 30px;
+}
+
+.whitey {
+  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  }
+
+.sidebar {
+  padding: 30px;
+}
+/* ==========================================================================
+   Months's custom styles
+   ========================================================================== */
+
+.january {
+    background-color: #BCDBFF;
+}
+.february {
+    background-color: #4F70B4;
+}
+.march {
+    background-color: #B1D1D6;
+}
+.april {
+    background-color: #FFE6E2;
+}
+.may {
+    background-color: #AFCAA6;
+}
+.june {
+    background-color: #F8F3B7;
+}
+.july {
+    background-color: #6CDFEA;
+}
+.august {
+    background-color: #EAA353;
+}
+.september {
+    background-color: #E7C900;
+}
+.october {
+    background-color: #D9BE8C;
+}
+.november {
+    background-color: #6F5B67;
+}
+.december {
+    background-color: #F25F63;
+}
+
+
+/*   ========================================================================== */
+
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
