@@ -1,5 +1,29 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'league_script_thileaguescript';
+    src: url('/fonts/leaguescript-webfont.eot');
+    src: url('/fonts/leaguescript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/leaguescript-webfont.woff') format('woff'),
+         url('/fonts/leaguescript-webfont.ttf') format('truetype'),
+         url('/fonts/leaguescript-webfont.svg#league_script_thileaguescript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'merriweather_sansbook';
+    src: url('/fonts/merriweathersans-light-webfont.eot');
+    src: url('/fonts/merriweathersans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/merriweathersans-light-webfont.woff') format('woff'),
+         url('/fonts/merriweathersans-light-webfont.ttf') format('truetype'),
+         url('/fonts/merriweathersans-light-webfont.svg#merriweather_sansbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   text-align: center;
   font-family: sans-serif; }
@@ -28,7 +52,9 @@ body {
    ========================================================================== */
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
+    font-family: 'league_script_thileaguescript';
+    padding-left: 30px;
 }
 
 .spacer {
@@ -43,6 +69,10 @@ h1 {
 
 .sidebar {
   padding: 30px;
+}
+
+h3 {
+  font-family: 'merriweather_sansbook';
 }
 /* ==========================================================================
    Months's custom styles
