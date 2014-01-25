@@ -2,8 +2,20 @@
 //= require jquery
 
 $(document).ready(function(){
-  var wheight = $(document).height();
-  console.log(wheight);
 
-  $('.month').css('height', wheight)
+  // Window height
+
+  var wheight = $(document).height();
+  $('.month').css('height', wheight);
+
+  // Scroll to current month
+
+  var d = new Date();
+
+  var monthNames = [ "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december" ];
+
+  var currentMonth = monthNames[d.getMonth()];
+
+  window.location.hash = currentMonth;
 })
