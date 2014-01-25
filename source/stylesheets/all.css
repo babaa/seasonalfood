@@ -87,7 +87,10 @@ h3 {
 .month {
     background-size: 100% Auto;
     background-repeat:no-repeat;
+}
 
+.scrollbar {
+  overflow: auto;
 }
 
 .navbar-fixed-top h1 {
@@ -139,7 +142,11 @@ h3 {
   .month {
       background-size: Auto 100%;
     }
+
+  .navbar-fixed-top h2{
+    display:none;
    }
+  }
 
 /*   ========================================================================== */
 
