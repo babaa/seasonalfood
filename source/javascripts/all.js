@@ -4,12 +4,10 @@
 $(document).ready(function(){
 
   // Window height
-
-  var wheight = $(document).height();
+  var wheight = $(window).height() + 30 ;
   $('.month').css('height', wheight);
 
-  // Scroll to current month
-
+  // Scroll to current monthNames
   var d = new Date();
 
   var monthNames = [ "january", "february", "march", "april", "may", "june",
@@ -18,4 +16,5 @@ $(document).ready(function(){
   var currentMonth = monthNames[d.getMonth()];
 
   window.location.hash = currentMonth;
+
 })

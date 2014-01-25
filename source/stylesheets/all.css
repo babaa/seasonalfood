@@ -54,7 +54,16 @@ body {
 h1 {
     font-size: 45px;
     font-family: 'league_script_thileaguescript';
-    padding-left: 30px;
+    padding-left: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'league_script_thileaguescript';
+}
+
+h3 {
+  padding-left: 30px;
 }
 
 .spacer {
@@ -63,7 +72,7 @@ h1 {
 
 .whitey {
   background-color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   height: 100%;
   }
 
@@ -74,47 +83,63 @@ h1 {
 h3 {
   font-family: 'merriweather_sansbook';
 }
+
+.month {
+    background-size: 100% Auto;
+    background-repeat:no-repeat;
+
+}
+
+.navbar-fixed-top h1 {
+  color: #000;
+}
 /* ==========================================================================
    Months's custom styles
    ========================================================================== */
 
 .january {
-    background-color: #BCDBFF;
+    background-image: url('/images/6871494549_100ee876de_o.jpg');
 }
 .february {
-    background-color: #4F70B4;
+    background-image: url('/images/6882767129_3fa613ac16_o-febx.jpg');
 }
 .march {
-    background-color: #B1D1D6;
+    background-image: url('/images/6813859947_94f47a86d0_o-feb.jpg');
 }
 .april {
-    background-color: #FFE6E2;
+    background-image: url('/images/8700860829_8fc3473ea8_kx.jpg');
 }
 .may {
-    background-color: #AFCAA6;
+    background-image: url('/images/3259991231_5ddc7376bd_b.jpg');
 }
 .june {
-    background-color: #F8F3B7;
+    background-image: url('/images/7457659076_9be3a830f0_k.jpg');
 }
 .july {
-    background-color: #6CDFEA;
+    background-image: url('/images/3923016387_8495f56d52_o.jpg');
 }
 .august {
-    background-color: #EAA353;
+    background-image: url('/images/9434990231_a31aa4461d_k.jpg');
 }
 .september {
-    background-color: #E7C900;
+    background-image: url('/images/9965617073_2f9df9b0d4_k.jpg');
 }
 .october {
-    background-color: #D9BE8C;
+    background-image: url('/images/10343718126_8202818b8e_k.jpg');
 }
 .november {
-    background-color: #6F5B67;
+    background-image: url('/images/4085956318_39a4002d2b_o.jpg');
 }
 .december {
-    background-color: #F25F63;
+    background-image: url('/images/6822833235_0422ca0058_o-feb.jpg');
 }
 
+
+@media (max-width: 1000px) { 
+  .month {
+      background-size: Auto 100%;
+    }
+   }
 
 /*   ========================================================================== */
 

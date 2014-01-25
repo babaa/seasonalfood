@@ -43,12 +43,51 @@ helpers do
   def months
     {january: 
       {name: 'Jaanuar', 
-        veggies: [{'ÕUN' => ''}, 
-                  {'KARTUL' => ''}]
+        veggies: ['ÕUN', 'KARTUL']
       } ,
       february:  
       {name: 'Veebruar',
-        veggies: [{'KARTUL' => ''}]
+        veggies: ['KARTUL', 'PEAKAPSAS']
+      },
+      march:  
+      {name: 'Märts',
+        veggies: ['KARTUL', 'PEAKAPSAS']
+      },
+      april:  
+      {name: 'Aprill',
+        veggies: ['PEAKAPSAS']
+      },
+      may:  
+      {name: 'Mai',
+        veggies: ['REDIS']
+      },
+      june:  
+      {name: 'Juuni',
+        veggies: ['METSMAASIKAS', 'KURK','REDIS','LILLKAPSAS']
+      },
+      july:  
+      {name: 'Juuli',
+        veggies: ['KIRSS', 'PUNANE SÕSTAR','VAARIKAS','AEDMAASIKAS','MUSTIKAS','HERNES','KURK','PORGAND','LILLKAPSAS', 'KARTUL','SEENED']
+      },
+      august:  
+      {name: 'August',
+        veggies: ['ÕUN','PIRN','PLOOM','KIRSS','PUNANE SÕSTAR','MUSTIKAS','HERNES','PORGAND','LILLKAPSAS','VARAJANE KARTUL','SEENED','PÕLDUBA','KAALIKAS','PUNAPEET','VARAJANE PEAKAPSAS','PORRULAUK']
+      },
+      september:  
+      {name: 'September',
+        veggies: ['ÕUN','PIRN','PLOOM','SIBUL','PORGAND','VARAJANE KARTUL','SEENED','PÕLDUBA','KAALIKAS','PUNAPEET','PEAKAPSAS','PORRULAUK','JUURSELLER']
+      },
+      october: 
+      {name: 'Oktoober',
+        veggies: ['ÕUN','PIRN','KARTUL','SEENED','PEAKAPSAS','PORRULAUK']
+      },
+      november:
+      {name: 'November',
+        veggies: ['ÕUN','PIRN','KARTUL','PEAKAPSAS','PORRULAUK']
+      },
+      december:
+      {name: 'Detsember',
+        veggies: ['ÕUN','PIRN','KARTUL','PEAKAPSAS','PORRULAUK']
       }
     } 
   end

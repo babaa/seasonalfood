@@ -1,12 +1,16 @@
 - months.each do |k, month|
   .row.month{class: k, id: k}
-    .col-md-4.text-left.whitey.sidebar
-      %h1
-        = month[:name]
-      .row.spacer
-      %p
-        - month[:veggies].each do |vegetable|
-          - name = vegetable.keys[0]
-          - img = vegetable[vegetable.keys[0]]
-          %h3
-            = name
+    .row.whitey
+      .col-md-6.text-left.sidebar
+        %h1
+          = month[:name]
+        .row.spacer
+        - month[:veggies].each_slice(9) do |vegetable|
+          .col-md-4
+            - vegetable.each do |x|
+              - name = x
+              %h3
+                = name
+.col-md-6.col-md-offset-6.navbar-fixed-top.text-right
+  %h2
+    Millised Eesti metsa- ja aiasaadused on praegu värskelt saadaval?
