@@ -1,18 +1,6 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'league_script_thileaguescript';
-    src: url('/fonts/leaguescript-webfont.eot');
-    src: url('/fonts/leaguescript-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/leaguescript-webfont.woff') format('woff'),
-         url('/fonts/leaguescript-webfont.ttf') format('truetype'),
-         url('/fonts/leaguescript-webfont.svg#league_script_thileaguescript') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'merriweather_sansbook';
     src: url('/fonts/merriweathersans-light-webfont.eot');
     src: url('/fonts/merriweathersans-light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -23,6 +11,32 @@
     font-style: normal;
 
 }
+@font-face {
+  font-family: "Flaticon";
+  src: url("/fonts/flaticon.eot");
+  src: url("/fonts/flaticon.eot#iefix") format("embedded-opentype"),
+  url("/fonts/flaticon.woff") format("woff"),
+  url("/fonts/flaticon.ttf") format("truetype"),
+  url("/fonts/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-size: 40px;
+  font-style: normal;
+}.flaticon-checked11:before {
+  content: "\e000";
+}
+.flaticon-checkmark2:before {
+  content: "\e001";
+}
+.flaticon-tick1:before {
+  content: "\e002";
+}
+
 
 body {
   text-align: center;
@@ -51,102 +65,27 @@ body {
    Author's custom styles
    ========================================================================== */
 
-h1 {
-    font-size: 45px;
-    font-family: 'league_script_thileaguescript';
-    padding-left: 50px;
+body {
+  color: #9C9C9C;
+  font-family: 'merriweather_sansbook';
+  font-size: 16px;
 }
 
-h2 {
-    font-size: 40px;
-    font-family: 'league_script_thileaguescript';
-}
-
-h3 {
-  padding-left: 30px;
+h1, h2 {
+    font-family: 'merriweather_sansbook';
 }
 
 .spacer {
   height: 30px;
 }
 
-.whitey {
-  background-color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.5);
-  height: 100%;
-  }
-
-.sidebar {
-  padding: 30px;
+td {
+  vertical-align: middle !important;
 }
 
-h3 {
-  font-family: 'merriweather_sansbook';
+table img {
+  height: 80px;
 }
-
-.month {
-    background-size: 100% Auto;
-    background-repeat:no-repeat;
-}
-
-.scrollbar {
-  overflow: auto;
-}
-
-.navbar-fixed-top h1 {
-  color: #000;
-}
-/* ==========================================================================
-   Months's custom styles
-   ========================================================================== */
-
-.january {
-    background-image: url('/images/6871494549_100ee876de_o.jpg');
-}
-.february {
-    background-image: url('/images/6882767129_3fa613ac16_o-febx.jpg');
-}
-.march {
-    background-image: url('/images/6813859947_94f47a86d0_o-feb.jpg');
-}
-.april {
-    background-image: url('/images/8700860829_8fc3473ea8_kx.jpg');
-}
-.may {
-    background-image: url('/images/3259991231_5ddc7376bd_b.jpg');
-}
-.june {
-    background-image: url('/images/7457659076_9be3a830f0_k.jpg');
-}
-.july {
-    background-image: url('/images/3923016387_8495f56d52_o.jpg');
-}
-.august {
-    background-image: url('/images/9434990231_a31aa4461d_k.jpg');
-}
-.september {
-    background-image: url('/images/9965617073_2f9df9b0d4_k.jpg');
-}
-.october {
-    background-image: url('/images/10343718126_8202818b8e_k.jpg');
-}
-.november {
-    background-image: url('/images/4085956318_39a4002d2b_o.jpg');
-}
-.december {
-    background-image: url('/images/6822833235_0422ca0058_o-feb.jpg');
-}
-
-
-@media (max-width: 1000px) { 
-  .month {
-      background-size: Auto 100%;
-    }
-
-  .navbar-fixed-top h2{
-    display:none;
-   }
-  }
 
 /*   ========================================================================== */
 
