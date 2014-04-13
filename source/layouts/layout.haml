@@ -9,4 +9,32 @@
     = stylesheet_link_tag "bootstrap", "all"
     = javascript_include_tag  "all"
   %body
-    = yield
+  .container
+    .row.spacer
+    .row
+      %h1
+        HOOAJALINE TOIT
+    .row.spacer
+    .row
+      %h2
+        Millal on erinevad Eesti puu- ja köögiviljad värskelt saadaval?
+    .row.spacer
+    = yield    
+    .navbar-fixed-bottom
+      .container
+        %table.table.table-bordered.bottom-table
+          %thead
+            %tr.whitey
+              %th.wider Köögivili
+              %th Jaanuar
+              %th Veebruar
+              %th Märts
+              %th Aprill
+              %th Mai
+              %th Juuni
+              %th Juuli
+              %th August
+              %th September
+              %th Oktoober
+              %th November
+              %th Detsember

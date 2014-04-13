@@ -87,6 +87,34 @@ table img {
   height: 80px;
 }
 
+table {
+  table-layout: fixed;
+}
+
+.wider {
+  width:150px;
+}
+
+th {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.scroll {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.whitey {
+  background-color: #fff;
+}
+
+.bottom-table {
+  width: 1171px;
+  margin-bottom: 0px;
+}
+
 /*   ========================================================================== */
 
 
