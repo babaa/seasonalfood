@@ -71,12 +71,12 @@ body {
   font-size: 16px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'merriweather_sansbook';
 }
 
 .spacer {
-  height: 30px;
+  height: 40px;
 }
 
 td {
@@ -113,6 +113,22 @@ th {
 .bottom-table {
   width: 1171px;
   margin-bottom: 0px;
+}
+
+a {
+  color: #9C9C9C;
+  font-family: 'merriweather_sansbook';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+a:hover{
+  color: #C4C4C4;
+  text-decoration: none;
+}
+
+.space-inbetween {
+  margin: 0 15px 0 15px;
 }
 
 /*   ========================================================================== */
