@@ -12,16 +12,12 @@
   .container
     .row.spacer
     .row
-      =link_to 'Milleks', '#' , class: 'space-inbetween'
-      =link_to 'Tegijad', '#' , class: 'space-inbetween'
+      =link_to 'Milleks', 'milleks.html' , class: 'space-inbetween'
+      =link_to 'Tegijad', 'tegijad.html' , class: 'space-inbetween'
     .row.spacer
     .row
-      %h1
-        HOOAJALINE TOIT
+      =link_to 'index.html' do
+        %h1
+          HOOAJALINE TOIT
     .row.spacer
-    .row
-      %h3
-        Millal on erinevad Eesti puu- ja köögiviljad värskelt saadaval?
-    .row.spacer
-    .row.spacer
-    = yield 
+    = yield
