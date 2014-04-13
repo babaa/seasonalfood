@@ -40,57 +40,7 @@
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def months
-    {january: 
-      {name: 'Jaanuar', 
-        veggies: ['ÕUN', 'KARTUL']
-      } ,
-      february:  
-      {name: 'Veebruar',
-        veggies: ['KARTUL', 'PEAKAPSAS']
-      },
-      march:  
-      {name: 'Märts',
-        veggies: ['KARTUL', 'PEAKAPSAS']
-      },
-      april:  
-      {name: 'Aprill',
-        veggies: ['PEAKAPSAS']
-      },
-      may:  
-      {name: 'Mai',
-        veggies: ['REDIS']
-      },
-      june:  
-      {name: 'Juuni',
-        veggies: ['METSMAASIKAS', 'KURK','REDIS','LILLKAPSAS']
-      },
-      july:  
-      {name: 'Juuli',
-        veggies: ['KIRSS', 'PUNANE SÕSTAR','VAARIKAS','AEDMAASIKAS','MUSTIKAS','HERNES','KURK','PORGAND','LILLKAPSAS', 'KARTUL','SEENED']
-      },
-      august:  
-      {name: 'August',
-        veggies: ['ÕUN','PIRN','PLOOM','KIRSS','PUNANE SÕSTAR','MUSTIKAS','HERNES','PORGAND','LILLKAPSAS','VARAJANE KARTUL','SEENED','PÕLDUBA','KAALIKAS','PUNAPEET','VARAJANE PEAKAPSAS','PORRULAUK']
-      },
-      september:  
-      {name: 'September',
-        veggies: ['ÕUN','PIRN','PLOOM','SIBUL','PORGAND','VARAJANE KARTUL','SEENED','PÕLDUBA','KAALIKAS','PUNAPEET','PEAKAPSAS','PORRULAUK','JUURSELLER']
-      },
-      october: 
-      {name: 'Oktoober',
-        veggies: ['ÕUN','PIRN','KARTUL','SEENED','PEAKAPSAS','PORRULAUK']
-      },
-      november:
-      {name: 'November',
-        veggies: ['ÕUN','PIRN','KARTUL','PEAKAPSAS','PORRULAUK']
-      },
-      december:
-      {name: 'Detsember',
-        veggies: ['ÕUN','PIRN','KARTUL','PEAKAPSAS','PORRULAUK']
-      }
-    } 
-  end
+  
 end
 
 set :css_dir, 'stylesheets'
@@ -101,6 +51,7 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  activate :directory_indexes
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -115,4 +66,5 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
 end
