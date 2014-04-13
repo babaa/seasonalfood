@@ -15,3 +15,5 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem 'html2haml'
 gem 'jquery-middleman'
 gem 'puma'
+gem 'foreman'
+gem 'rack-contrib'
