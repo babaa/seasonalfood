@@ -7,7 +7,7 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Hooajaline toit"
     = stylesheet_link_tag "bootstrap", "all"
-    = javascript_include_tag  "all"
+    = javascript_include_tag  "all", "statcounter"
   %body
   .container
     .row.spacer
@@ -21,3 +21,17 @@
           HOOAJALINE TOIT
     .row.spacer
     = yield
+
+    :javascript
+      var sc_project=9691133; 
+      var sc_invisible=1; 
+      var sc_security="236f1a3b"; 
+      var scJsHost = (("https:" == document.location.protocol) ?
+      "https://secure." : "http://www.");
+      document.write("<sc"+"ript type='text/javascript' src='" +
+      scJsHost+
+      "statcounter.com/counter/counter.js'></"+"script>");
+    %noscript
+      .statcounter
+        %a{:href => "http://statcounter.com/", :target => "_blank", :title => "web analytics"}
+          %img.statcounter{:alt => "web analytics", :src => "http://c.statcounter.com/9691133/0/236f1a3b/1/"}/
